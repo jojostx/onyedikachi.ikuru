@@ -148,6 +148,13 @@ img {
   max-width: 120px;
 }
 
+.photo-round {
+  min-width: 20px;
+  max-width: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
 .tag-line {
   font-size: 2rem;
   margin-bottom: 0.5rem;
@@ -353,6 +360,11 @@ img {
 .sidebar-header p {
   font-size: 0.875rem;
   color: var(--color-black-secondary);
+}
+
+.sidebar-header.border-bottom-0 {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .nav-menu {
