@@ -214,6 +214,8 @@
 
         function toggleMenu() {
             document.getElementById('sidebar').classList.toggle('open');
+            const toggle = document.querySelector('.mobile-menu-toggle');
+            toggle.style.display = 'none';
         }
 
         // Close sidebar when clicking outside on mobile
@@ -226,6 +228,7 @@
                 !sidebar.contains(event.target) && 
                 !toggle.contains(event.target)) {
                 sidebar.classList.remove('open');
+                toggle.style.display = 'block';
             }
         });
     </script>
