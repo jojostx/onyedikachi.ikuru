@@ -352,7 +352,11 @@
         document.addEventListener('click', function (event) {
             const sidebar = document.getElementById('sidebar');
             const toggle = document.querySelector('.mobile-menu-toggle');
-            toggle.style.display = 'block';
+            if (!sidebar.classList.contains('open')) {
+                toggle.style.display = 'block';
+            } else {
+                toggle.style.display = 'none';
+            }
 
             if (window.innerWidth <= 768 &&
                 sidebar.classList.contains('open') &&
